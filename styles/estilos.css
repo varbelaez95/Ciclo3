@@ -12,19 +12,36 @@ ul{
     justify-content: space-between;
     padding: 10px;
 }
+<<<<<<< HEAD
 .logo{
     height: 70px;
 }
 .mainButton{
     background-color: indianred ;
     color: white;
+=======
+.button{
+>>>>>>> 6-crear-boton-login
     border: 0px;
     padding: 5px 10 px;
     border-radius: 5px;
     font-weight: bolder;
 }
-.mainButton:hover{
+.button:hover{
     cursor: pointer;
     transform: scale(1.1);
+}
+.mainButton{
+    background-color: indianred ;
+    color: white;
+}
+.mainButton:hover{
     box-shadow: 1px 1px rgb(141, 66, 39);
+}
+.secondaryButton{
+    background-color: cadetblue;
+    color: white;
+}
+.secondaryButton:hover{
+    box-shadow: 1px 1px darkcyan;
 }
