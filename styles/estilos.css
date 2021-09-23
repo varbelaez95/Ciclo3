@@ -1,7 +1,6 @@
 body{
     margin: 0px;
 }
-
 ul{
     list-style: none;
     padding: 0px;
@@ -12,16 +11,14 @@ ul{
     justify-content: space-between;
     padding: 10px;
 }
-<<<<<<< HEAD
 .logo{
     height: 70px;
 }
 .mainButton{
     background-color: indianred ;
     color: white;
-=======
+}
 .button{
->>>>>>> 6-crear-boton-login
     border: 0px;
     padding: 5px 10 px;
     border-radius: 5px;
@@ -44,4 +41,18 @@ ul{
 }
 .secondaryButton:hover{
     box-shadow: 1px 1px darkcyan;
+}
+.buscar{
+    background-color: white;
+    border: 1px solid gray;
+    padding: 4px;
+    border-radius: 8px;
+
+}
+.buscar:focus-within{
+    border: 1px solid pink;
+}
+.buscar > input{
+    outline: none;
+    border: 0px;
 }
