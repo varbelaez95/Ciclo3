@@ -33,24 +33,25 @@ function App() {
         <section>
           <h1>Razas de Perros</h1>
           <ul className="breedCardContainer">
-            <li className="breedCard">
-              <div className="contenedorImagen">
-                <img src={borderCollie} alt="Border Collie" />
-              </div>
-              <span className="breedTitle">Border Collie</span>
-            </li>
-            <li className="breedCard">
-              <div className="contenedorImagen">
-                <img src={rhodesiano} alt="Rhodesiano" />
-              </div>
-              <span className="breedTitle">Rhodesiano</span>
-            </li>
+            <CardRazasPerros nombreRaza='Border Collie' imagen={borderCollie}/>
+            <CardRazasPerros nombreRaza='Rhodesian' imagen={rhodesiano}/>
           </ul>
         </section>
         <section></section>
       </main>
       <footer></footer>
     </div>
+  );
+}
+
+function CardRazasPerros({nombreRaza, imagen}){
+  return (
+    <li className="breedCard">
+      <div className="contenedorImagen">
+        <img src={imagen} alt={nombreRaza} />
+      </div>
+      <span className="breedTitle">{nombreRaza}</span>
+    </li>
   );
 }
 
